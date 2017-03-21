@@ -16,3 +16,6 @@
 
 ### 查看文件状态
 > git status
+
+### 查看文件修改内容
+> git diff filename 
