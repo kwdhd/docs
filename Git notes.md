@@ -81,4 +81,16 @@
 ## 分支管理
 
 ### 新建分支
+创建分支并切换
 > git checkout -b work
+
+等于
+> git branch name
+> git checkout name
+
+
+### 合并分支
+> git merge 分支名
+
+### 删除分支
+> git branch -d 分支名
