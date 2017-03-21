@@ -81,4 +81,9 @@
 ## 分支管理
 
 ### 新建分支
+创建分支并切换
 > git checkout -b work
+
+=
+> git branch name
+> git checkout name
