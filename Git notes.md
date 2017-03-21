@@ -84,6 +84,6 @@
 创建分支并切换
 > git checkout -b work
 
-=
+等于
 > git branch name
 > git checkout name
