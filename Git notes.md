@@ -86,7 +86,6 @@
 
 等于
 > git branch name
-<<<<<<< HEAD
 > git checkout name
 
 
@@ -95,6 +94,3 @@
 
 ### 删除分支
 > git branch -d 分支名
-=======
-> git checkout name
->>>>>>> master
