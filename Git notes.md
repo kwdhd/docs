@@ -31,7 +31,9 @@
 > git log --pretty=oneline
 
 
+### 版本回退
+> git reset --hard HEAD~100 or commit id
 
-增加一个废行，用来回退
+### 查看历史命令
+> git reflog
 
-再增加一个
