@@ -37,3 +37,14 @@
 ### 查看历史命令
 > git reflog
 
+## 暂存区
+工作区 -> 暂存区 -> 版本
+
+## 丢弃工作区的修改
+> git checkout -- filename 
+
+## 丢弃暂存区的修改
+> git reset HEAD filename
+
+
+## 删除文件
