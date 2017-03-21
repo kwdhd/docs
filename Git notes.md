@@ -9,6 +9,7 @@
 > git init 
 
 ### 把文件添加到 Git
+文件修改了也要通过add添加之后才能commit
 > git add filename
 
 ### 文件提交到仓库
@@ -19,3 +20,15 @@
 
 ### 查看文件修改内容
 > git diff filename 
+
+### 查看提交日志
+> git log
+
+查看指定文件的日志
+> git log filename
+
+显示在一行
+> git log --pretty=oneline
+
+
+
