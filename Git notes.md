@@ -1,5 +1,6 @@
 # Git notes
 
+## 基本
 ### 设置用户名、邮箱
 > git config --global user.name "kwdhd"
 > git config --glbbal user.email "kwdhdts@gmail.com"
@@ -40,11 +41,41 @@
 ## 暂存区
 工作区 -> 暂存区 -> 版本
 
-## 丢弃工作区的修改
+### 丢弃工作区的修改
 > git checkout -- filename 
 
-## 丢弃暂存区的修改
+### 丢弃暂存区的修改
 > git reset HEAD filename
 
 
-## 删除文件
+### 删除文件
+> rm filename
+> git rm filename
+> git commit -m 'remark'
+
+### 恢复删除
+删除文件未提交时
+> git checkout -- filename
+
+
+## Github
+
+### 创建密匙
+密匙文件生成在 ~/.ssh文件夹中，id_rsa 是私匙，id_rsa.pub 是公匙添加到Github的 SSH Key中
+> ssh-keygen -t rsa -C "kwdhdts@gmail.com"
+
+### 创建远程仓库
+在Github上找到 `create a new repo`  按钮，输入仓库名即可创建一个新仓库。
+
+
+### 关联远程仓库
+> git remote add origin git@github.com:用户名/仓库名.git
+
+### 将本地仓库内容推送到远程仓库
+> git push -u  origin master
+
+### 克隆远程库
+> git clone git@github.com:用户名/仓库名.git
+
+
+## 分支管理
