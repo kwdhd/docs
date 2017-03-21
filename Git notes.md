@@ -31,6 +31,12 @@
 显示在一行
 > git log --pretty=oneline
 
+图形化展示
+> git log --graph
+
+美化展示
+>git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 
 ### 版本回退
 > git reset --hard HEAD~100 or commit id
