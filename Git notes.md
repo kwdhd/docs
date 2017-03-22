@@ -88,8 +88,7 @@
 
 ### 新建分支
 创建分支并切换
-> git checkout -b work
-
+> git checkout -b wor
 等于
 > git branch name
 > git checkout name
@@ -100,3 +99,16 @@
 
 ### 删除分支
 > git branch -d 分支名
+
+### 暂存分支
+可以将分支内容暂存起来，不用提交
+> git stash
+
+查看暂存区
+> git stash list
+
+恢复暂存区
+> git stash apply
+
+恢复暂存区同时删除暂存区
+> git stash pop
