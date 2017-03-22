@@ -84,6 +84,7 @@
 > git clone git@github.com:用户名/仓库名.git
 
 
+
 ## 分支管理
 
 ### 新建分支
@@ -147,7 +148,51 @@
 ## 标签管理
 
 ### 新建标签
-> git tag v1.0
+> git tag tagname 
+
+默认是打到最新提交的版本上，要打到指定版本上
+> git tag tagname commit id
 
 ### 查看标签
 > git tag
+
+查看标签说明
+> git show tagname
+
+### 删除标签
+> git tag -d tagname
+
+
+### 推送标签到远程
+> git push origin tagname
+
+推送全部未推送的本地标签
+>git push origin --tags
+
+删除远程标签
+> git push origin :refs/tags/tagname
+
+### 忽略文件
+在.gitignore文件中配置文件名、扩展名
+>\#Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+>\# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+
+### 配置命令别名
+> git config --global alias.st status
+> git config --global alias.co checkout
+> git config --global alias.ci commit
+> git config --global alias.br branch
+> git config --global alias.unstage 'reset HEAD'
+> git config --global alias.last 'log -1'
+>  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
