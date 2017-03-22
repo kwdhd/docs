@@ -100,6 +100,9 @@
 ### 删除分支
 > git branch -d 分支名
 
+强行删除分支
+> git branch -D 分支名
+
 ### 暂存分支
 可以将分支内容暂存起来，不用提交
 > git stash
@@ -112,3 +115,39 @@
 
 恢复暂存区同时删除暂存区
 > git stash pop
+
+多次stash
+> git stash list
+> git stash apply stash@{0}
+
+
+## 多人协作
+
+### 查看远程库信息
+> git remote
+> git remote -v
+
+### 推送分支
+> git push origin 分支名
+
+
+### 克隆远程分支
+> git clone git@github.com:kwdhd/库名.git
+
+切换到远程分支
+> git checkout -b 分支名 origin/远程分支名
+
+### 获取分支
+> git pull <remote> <branch>
+
+### 设置本地分支与远程分支链接
+> git branch --set-upstream dev origin/dev
+
+
+## 标签管理
+
+### 新建标签
+> git tag v1.0
+
+### 查看标签
+> git tag
